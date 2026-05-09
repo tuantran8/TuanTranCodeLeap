@@ -1,0 +1,85 @@
+# CI/CD Pipeline for .NET Core API Assessment
+trigger:
+  branches:
+    include:
+    - [cite_start]main # Updated to the default GitHub/Azure branch [cite: 106]
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  # Matches the directory structure from your screenshot
+  resultsDirectory: '$(Common.TestResultsDirectory)'
+
+steps:
+- task: NuGetToolInstaller@1
+  displayName: 'Install NuGet'
+
+- task: UseDotNet@2
+  [cite_start]displayName: 'Install .NET 8.x SDK' # Updated to latest stable 
+  inputs:
+    packageType: 'sdk'
+    version: '8.x'
+
+# --- Prepare SonarCloud Analysis ---
+# Using generic names to respect confidentiality [cite: 131]
+- task: SonarCloudPrepare@2
+  displayName: 'Prepare Analysis on SonarCloud'
+  inputs:
+    SonarCloud: 'CodeLeap_Assessment_Service' 
+    organization: 'your-personal-org'
+    scannerMode: 'MSBuild'
+    projectKey: 'TuanTran-CodeLeap-API'
+    projectName: 'TuanTran-CodeLeap-API'
+    extraProperties: |
+      sonar.exclusions=**/obj/**,**/bin/**,**/*.json
+      sonar.cs.vscoveragexml.reportsPaths=$(resultsDirectory)/**/*.coveragexml
+
+# --- Restore and Build ---
+- task: DotNetCoreCLI@2
+  displayName: 'Restore Packages'
+  inputs:
+    command: 'restore'
+    projects: '$(solution)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build Solution'
+  inputs:
+    command: 'build'
+    projects: '$(solution)'
+    arguments: '--configuration $(buildConfiguration) /p:DebugType=portable /p:DebugSymbols=true'
+
+# --- Test and Coverage ---
+- task: DotNetCoreCLI@2
+  displayName: 'Run Tests & Generate Coverage'
+  inputs:
+    command: 'test'
+    [cite_start]projects: '**/*Tests/*.csproj' # Adjusted to find your test projects [cite: 85]
+    arguments: '--configuration $(buildConfiguration) --collect "Code Coverage"'
+    publishTestResults: true
+
+# --- Run SonarCloud Analysis ---
+- task: SonarCloudAnalyze@2
+  [cite_start]displayName: 'Run SonarCloud Code Analysis' [cite: 108]
+
+- task: SonarCloudPublish@2
+  displayName: 'Publish Quality Gate Result'
+
+# --- Publish Build Artifacts ---
+- task: DotNetCoreCLI@2
+  displayName: 'Publish API'
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
+    zipAfterPublish: true
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Upload Artifact'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
