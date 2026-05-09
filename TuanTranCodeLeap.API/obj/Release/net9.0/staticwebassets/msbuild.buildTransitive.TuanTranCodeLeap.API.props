@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\TuanTranCodeLeap.API.props" />
+</Project>

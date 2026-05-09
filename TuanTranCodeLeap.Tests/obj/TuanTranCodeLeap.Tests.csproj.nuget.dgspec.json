@@ -1,0 +1,475 @@
+{
+  "format": 1,
+  "restore": {
+    "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Tests\\TuanTranCodeLeap.Tests.csproj": {}
+  },
+  "projects": {
+    "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.API\\TuanTranCodeLeap.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.API\\TuanTranCodeLeap.API.csproj",
+        "projectName": "TuanTranCodeLeap.API",
+        "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.API\\TuanTranCodeLeap.API.csproj",
+        "packagesPath": "C:\\Users\\wong9\\.nuget\\packages\\",
+        "outputPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wong9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/bfY8WJI339Uqofm7REzwupVkkfqc5lEJvgJJavYU66IHTloWtg/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj"
+              },
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\TuanTranCodeLeap.Infrastructure.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\TuanTranCodeLeap.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj",
+        "projectName": "TuanTranCodeLeap.Application",
+        "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj",
+        "packagesPath": "C:\\Users\\wong9\\.nuget\\packages\\",
+        "outputPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wong9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/bfY8WJI339Uqofm7REzwupVkkfqc5lEJvgJJavYU66IHTloWtg/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[12.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj",
+        "projectName": "TuanTranCodeLeap.Domain",
+        "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj",
+        "packagesPath": "C:\\Users\\wong9\\.nuget\\packages\\",
+        "outputPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wong9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/bfY8WJI339Uqofm7REzwupVkkfqc5lEJvgJJavYU66IHTloWtg/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\TuanTranCodeLeap.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\TuanTranCodeLeap.Infrastructure.csproj",
+        "projectName": "TuanTranCodeLeap.Infrastructure",
+        "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\TuanTranCodeLeap.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\wong9\\.nuget\\packages\\",
+        "outputPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wong9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/bfY8WJI339Uqofm7REzwupVkkfqc5lEJvgJJavYU66IHTloWtg/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj"
+              },
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Tests\\TuanTranCodeLeap.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Tests\\TuanTranCodeLeap.Tests.csproj",
+        "projectName": "TuanTranCodeLeap.Tests",
+        "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Tests\\TuanTranCodeLeap.Tests.csproj",
+        "packagesPath": "C:\\Users\\wong9\\.nuget\\packages\\",
+        "outputPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\wong9\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/bfY8WJI339Uqofm7REzwupVkkfqc5lEJvgJJavYU66IHTloWtg/api": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.API\\TuanTranCodeLeap.API.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.API\\TuanTranCodeLeap.API.csproj"
+              },
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Application\\TuanTranCodeLeap.Application.csproj"
+              },
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Domain\\TuanTranCodeLeap.Domain.csproj"
+              },
+              "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\TuanTranCodeLeap.Infrastructure.csproj": {
+                "projectPath": "d:\\Tuan\\Tuan-Tran-codeleap\\TuanTranCodeLeap.Infrastructure\\TuanTranCodeLeap.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

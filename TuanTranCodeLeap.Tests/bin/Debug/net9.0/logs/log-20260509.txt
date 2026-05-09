@@ -1,0 +1,463 @@
+2026-05-09 02:55:34.059 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 02:55:34.127 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 02:55:34.235 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 110
+2026-05-09 02:55:34.274 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 02:55:34.302 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 02:55:34.325 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 02:55:34.409 +08:00 [INF] Starting registration for email: test.integration@example.com
+2026-05-09 02:55:34.890 +08:00 [INF] User registration successful for email: test.integration@example.com, User ID: 1
+2026-05-09 02:55:34.895 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 02:55:34.915 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 581.6432ms
+2026-05-09 02:55:34.928 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 02:55:34.932 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 699.6951ms
+2026-05-09 03:02:14.245 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 03:02:14.244 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 03:02:14.380 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 03:02:14.380 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 03:02:14.578 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 98
+2026-05-09 03:02:14.578 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:02:14.627 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 03:02:14.627 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 03:02:14.666 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:14.666 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:14.692 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:02:14.692 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:02:14.763 +08:00 [INF] Starting registration for email: product.user.cf908feb-1ce4-433e-bbc8-65f8e94a4775@example.com
+2026-05-09 03:02:14.763 +08:00 [INF] Starting registration for email: login.test@example.com
+2026-05-09 03:02:15.279 +08:00 [ERR] Error during registration for email: login.test@example.com
+System.InvalidOperationException: Sequence contains more than one element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneElementException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method944(Closure)
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryQueryExpression.ResultEnumerable.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextHelper()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.IsInRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at TuanTranCodeLeap.Application.Auth.Commands.RegisterCommandHandler.Handle(RegisterCommand request, CancellationToken cancellationToken) in D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Auth\Commands\RegisterCommand.cs:line 97
+2026-05-09 03:02:15.279 +08:00 [ERR] Error during registration for email: product.user.cf908feb-1ce4-433e-bbc8-65f8e94a4775@example.com
+System.InvalidOperationException: Sequence contains more than one element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneElementException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method944(Closure)
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryQueryExpression.ResultEnumerable.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextHelper()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.IsInRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at TuanTranCodeLeap.Application.Auth.Commands.RegisterCommandHandler.Handle(RegisterCommand request, CancellationToken cancellationToken) in D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Auth\Commands\RegisterCommand.cs:line 97
+2026-05-09 03:02:15.312 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 03:02:15.312 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 03:02:15.334 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 635.3463ms
+2026-05-09 03:02:15.334 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 635.2036ms
+2026-05-09 03:02:15.354 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.354 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.360 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 500 null application/json; charset=utf-8 783.8612ms
+2026-05-09 03:02:15.360 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 500 null application/json; charset=utf-8 783.8858ms
+2026-05-09 03:02:15.378 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - null null
+2026-05-09 03:02:15.392 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-09 03:02:15.402 +08:00 [WRN] Authentication failed. Error: null, Description: null
+2026-05-09 03:02:15.412 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-09 03:02:15.412 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - 401 null application/json; charset=utf-8 34.2883ms
+2026-05-09 03:02:15.419 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:02:15.423 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.424 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:02:15.428 +08:00 [INF] Starting registration for email: product.user.6327ed30-7e88-4bbc-946c-29bebd512397@example.com
+2026-05-09 03:02:15.487 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 98
+2026-05-09 03:02:15.490 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.490 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:02:15.491 +08:00 [INF] Starting registration for email: login.fail@example.com
+2026-05-09 03:02:15.578 +08:00 [ERR] Error during registration for email: product.user.6327ed30-7e88-4bbc-946c-29bebd512397@example.com
+System.InvalidOperationException: Sequence contains more than one element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneElementException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method944(Closure)
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryQueryExpression.ResultEnumerable.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextHelper()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.IsInRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at TuanTranCodeLeap.Application.Auth.Commands.RegisterCommandHandler.Handle(RegisterCommand request, CancellationToken cancellationToken) in D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Auth\Commands\RegisterCommand.cs:line 97
+2026-05-09 03:02:15.581 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 03:02:15.584 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 159.5503ms
+2026-05-09 03:02:15.584 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.585 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 500 null application/json; charset=utf-8 165.2044ms
+2026-05-09 03:02:15.591 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:02:15.591 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.592 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:02:15.614 +08:00 [INF] Starting registration for email: product.user.aca72321-bced-4b28-807d-89c86a4f7415@example.com
+2026-05-09 03:02:15.644 +08:00 [ERR] Error during registration for email: login.fail@example.com
+System.InvalidOperationException: Sequence contains more than one element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneElementException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method944(Closure)
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryQueryExpression.ResultEnumerable.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextHelper()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.IsInRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at TuanTranCodeLeap.Application.Auth.Commands.RegisterCommandHandler.Handle(RegisterCommand request, CancellationToken cancellationToken) in D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Auth\Commands\RegisterCommand.cs:line 97
+2026-05-09 03:02:15.646 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 03:02:15.650 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 159.5796ms
+2026-05-09 03:02:15.650 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.650 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 500 null application/json; charset=utf-8 163.0264ms
+2026-05-09 03:02:15.654 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 65
+2026-05-09 03:02:15.658 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.675 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:02:15.694 +08:00 [INF] Login attempt for email: login.fail@example.com
+2026-05-09 03:02:15.845 +08:00 [ERR] Error during registration for email: product.user.aca72321-bced-4b28-807d-89c86a4f7415@example.com
+System.InvalidOperationException: Sequence contains more than one element
+   at System.Linq.ThrowHelper.ThrowMoreThanOneElementException()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method944(Closure)
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryQueryExpression.ResultEnumerable.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextHelper()
+   at Microsoft.EntityFrameworkCore.InMemory.Query.Internal.InMemoryShapedQueryCompilingExpressionVisitor.QueryingEnumerable`1.Enumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.IsInRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at TuanTranCodeLeap.Application.Auth.Commands.RegisterCommandHandler.Handle(RegisterCommand request, CancellationToken cancellationToken) in D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Auth\Commands\RegisterCommand.cs:line 97
+2026-05-09 03:02:15.850 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 03:02:15.851 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 259.0666ms
+2026-05-09 03:02:15.851 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:02:15.852 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 500 null application/json; charset=utf-8 260.749ms
+2026-05-09 03:03:22.370 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 03:03:22.370 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 03:03:22.439 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 03:03:22.439 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 03:03:22.593 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:03:22.593 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 98
+2026-05-09 03:03:22.634 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 03:03:22.634 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 03:03:22.667 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:22.667 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:22.690 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:22.690 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:22.751 +08:00 [INF] Starting registration for email: product.user.469d7d89-9a02-4e09-b8af-ed6271dc252b@example.com
+2026-05-09 03:03:22.751 +08:00 [INF] Starting registration for email: login.test@example.com
+2026-05-09 03:03:23.346 +08:00 [INF] User registration successful for email: login.test@example.com, User ID: 1
+2026-05-09 03:03:23.346 +08:00 [INF] User registration successful for email: product.user.469d7d89-9a02-4e09-b8af-ed6271dc252b@example.com, User ID: 1
+2026-05-09 03:03:23.353 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:03:23.353 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:03:23.376 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 681.469ms
+2026-05-09 03:03:23.376 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 681.4761ms
+2026-05-09 03:03:23.393 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.393 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.399 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 807.8772ms
+2026-05-09 03:03:23.399 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 807.9108ms
+2026-05-09 03:03:23.401 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 99
+2026-05-09 03:03:23.401 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 60
+2026-05-09 03:03:23.405 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.405 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.413 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:23.413 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:23.424 +08:00 [INF] Login attempt for email: product.user.469d7d89-9a02-4e09-b8af-ed6271dc252b@example.com
+2026-05-09 03:03:23.424 +08:00 [INF] Login attempt for email: login.test@example.com
+2026-05-09 03:03:23.639 +08:00 [INF] Login successful for email: login.test@example.com, User ID: 1
+2026-05-09 03:03:23.639 +08:00 [INF] Login successful for email: product.user.469d7d89-9a02-4e09-b8af-ed6271dc252b@example.com, User ID: 1
+2026-05-09 03:03:23.641 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:03:23.641 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:03:23.651 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 238.185ms
+2026-05-09 03:03:23.651 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 238.0992ms
+2026-05-09 03:03:23.651 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.651 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.652 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 250.1835ms
+2026-05-09 03:03:23.652 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 250.1146ms
+2026-05-09 03:03:23.657 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - null null
+2026-05-09 03:03:23.672 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 98
+2026-05-09 03:03:23.675 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.675 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:23.678 +08:00 [INF] Starting registration for email: login.fail@example.com
+2026-05-09 03:03:23.724 +08:00 [INF] Token validated successfully for user: unknown
+2026-05-09 03:03:23.733 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.738 +08:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.API.Common.ApiResponse`1[TuanTranCodeLeap.Application.DTOs.PagedProductsResponse]]] GetProducts(Int32, Int32) on controller TuanTranCodeLeap.API.Controllers.ProductsController (TuanTranCodeLeap.API).
+2026-05-09 03:03:23.747 +08:00 [INF] Retrieving products - Page: 1, PageSize: 10
+2026-05-09 03:03:23.766 +08:00 [INF] Products retrieved successfully - Count: 10, Total: 500
+2026-05-09 03:03:23.767 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.API.Common.ApiResponse`1[[TuanTranCodeLeap.Application.DTOs.PagedProductsResponse, TuanTranCodeLeap.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 03:03:23.789 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API) in 50.7862ms
+2026-05-09 03:03:23.789 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.789 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 132.3027ms
+2026-05-09 03:03:23.801 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - null null
+2026-05-09 03:03:23.805 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-09 03:03:23.810 +08:00 [WRN] Authentication failed. Error: null, Description: null
+2026-05-09 03:03:23.814 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-09 03:03:23.815 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - 401 null application/json; charset=utf-8 13.3355ms
+2026-05-09 03:03:23.819 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:03:23.819 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.819 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:23.821 +08:00 [INF] Starting registration for email: product.user.e08cb50e-a6c0-4af3-9f1f-838404a2652c@example.com
+2026-05-09 03:03:23.826 +08:00 [INF] User registration successful for email: login.fail@example.com, User ID: 2
+2026-05-09 03:03:23.826 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:03:23.827 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 151.7592ms
+2026-05-09 03:03:23.827 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.827 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 155.5777ms
+2026-05-09 03:03:23.832 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 65
+2026-05-09 03:03:23.832 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.833 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:23.835 +08:00 [INF] Login attempt for email: login.fail@example.com
+2026-05-09 03:03:23.996 +08:00 [INF] User registration successful for email: product.user.e08cb50e-a6c0-4af3-9f1f-838404a2652c@example.com, User ID: 2
+2026-05-09 03:03:23.996 +08:00 [WRN] Login failed: Invalid password - Email: login.fail@example.com
+2026-05-09 03:03:23.996 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:03:23.998 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 178.3813ms
+2026-05-09 03:03:23.998 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:23.999 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 180.1383ms
+2026-05-09 03:03:24.001 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 99
+2026-05-09 03:03:24.001 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.002 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:24.003 +08:00 [INF] Login attempt for email: product.user.e08cb50e-a6c0-4af3-9f1f-838404a2652c@example.com
+2026-05-09 03:03:23.997 +08:00 [ERR] Error during login for email: login.fail@example.com
+System.Exception: Invalid email or password
+   at TuanTranCodeLeap.Application.Auth.Commands.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Auth\Commands\LoginCommand.cs:line 71
+2026-05-09 03:03:24.004 +08:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 03:03:24.012 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 178.7621ms
+2026-05-09 03:03:24.013 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.013 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 500 null application/json; charset=utf-8 181.3308ms
+2026-05-09 03:03:24.124 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 110
+2026-05-09 03:03:24.125 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.125 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:24.141 +08:00 [INF] Login successful for email: product.user.e08cb50e-a6c0-4af3-9f1f-838404a2652c@example.com, User ID: 2
+2026-05-09 03:03:24.142 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:03:24.143 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 140.6244ms
+2026-05-09 03:03:24.143 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.144 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 142.5845ms
+2026-05-09 03:03:24.148 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products/0 - null null
+2026-05-09 03:03:24.149 +08:00 [INF] Starting registration for email: test.integration@example.com
+2026-05-09 03:03:24.151 +08:00 [INF] Token validated successfully for user: unknown
+2026-05-09 03:03:24.154 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.160 +08:00 [INF] Route matched with {action = "GetProductById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.API.Common.ApiResponse`1[TuanTranCodeLeap.Application.DTOs.ProductDto]]] GetProductById(Int32) on controller TuanTranCodeLeap.API.Controllers.ProductsController (TuanTranCodeLeap.API).
+2026-05-09 03:03:24.163 +08:00 [INF] Executing BadRequestObjectResult, writing value of type 'TuanTranCodeLeap.API.Common.ApiResponse`1[[TuanTranCodeLeap.Application.DTOs.ProductDto, TuanTranCodeLeap.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 03:03:24.166 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API) in 5.9857ms
+2026-05-09 03:03:24.166 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.167 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products/0 - 400 null application/json; charset=utf-8 18.5887ms
+2026-05-09 03:03:24.170 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:03:24.170 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.171 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:03:24.187 +08:00 [INF] Starting registration for email: product.user.7bd5588c-80cd-47e6-bbee-e330a3bb82aa@example.com
+2026-05-09 03:03:24.290 +08:00 [INF] User registration successful for email: test.integration@example.com, User ID: 3
+2026-05-09 03:03:24.291 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:03:24.291 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 166.1964ms
+2026-05-09 03:03:24.292 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:03:24.292 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 167.7221ms
+2026-05-09 03:04:16.737 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 03:04:16.737 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 03:04:16.802 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 03:04:16.802 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 03:04:16.945 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 98
+2026-05-09 03:04:16.945 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:04:16.989 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 03:04:16.989 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 03:04:17.042 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:17.042 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:17.072 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:17.072 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:17.152 +08:00 [INF] Starting registration for email: product.user.0abbca0c-3b4a-489e-a24e-6ff5ba72ab2a@example.com
+2026-05-09 03:04:17.152 +08:00 [INF] Starting registration for email: login.test@example.com
+2026-05-09 03:04:17.756 +08:00 [INF] User registration successful for email: login.test@example.com, User ID: 1
+2026-05-09 03:04:17.756 +08:00 [INF] User registration successful for email: product.user.0abbca0c-3b4a-489e-a24e-6ff5ba72ab2a@example.com, User ID: 1
+2026-05-09 03:04:17.764 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:04:17.764 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:04:17.786 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 710.1883ms
+2026-05-09 03:04:17.786 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 710.287ms
+2026-05-09 03:04:17.807 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:17.807 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:17.814 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 871.9618ms
+2026-05-09 03:04:17.814 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 872.1606ms
+2026-05-09 03:04:17.822 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 99
+2026-05-09 03:04:17.822 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 60
+2026-05-09 03:04:17.826 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:17.826 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:17.837 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:17.839 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:17.851 +08:00 [INF] Login attempt for email: login.test@example.com
+2026-05-09 03:04:17.851 +08:00 [INF] Login attempt for email: product.user.0abbca0c-3b4a-489e-a24e-6ff5ba72ab2a@example.com
+2026-05-09 03:04:18.099 +08:00 [INF] Login successful for email: product.user.0abbca0c-3b4a-489e-a24e-6ff5ba72ab2a@example.com, User ID: 1
+2026-05-09 03:04:18.100 +08:00 [INF] Login successful for email: login.test@example.com, User ID: 1
+2026-05-09 03:04:18.101 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:04:18.101 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:04:18.112 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 272.0613ms
+2026-05-09 03:04:18.112 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 274.1318ms
+2026-05-09 03:04:18.112 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.112 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.113 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 290.4192ms
+2026-05-09 03:04:18.113 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 290.3589ms
+2026-05-09 03:04:18.118 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - null null
+2026-05-09 03:04:18.130 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 98
+2026-05-09 03:04:18.134 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.135 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.137 +08:00 [INF] Starting registration for email: login.fail@example.com
+2026-05-09 03:04:18.185 +08:00 [INF] Token validated successfully for user: unknown
+2026-05-09 03:04:18.193 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.201 +08:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.API.Common.ApiResponse`1[TuanTranCodeLeap.Application.DTOs.PagedProductsResponse]]] GetProducts(Int32, Int32) on controller TuanTranCodeLeap.API.Controllers.ProductsController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.212 +08:00 [INF] Retrieving products - Page: 1, PageSize: 10
+2026-05-09 03:04:18.233 +08:00 [INF] Products retrieved successfully - Count: 10, Total: 500
+2026-05-09 03:04:18.235 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.API.Common.ApiResponse`1[[TuanTranCodeLeap.Application.DTOs.PagedProductsResponse, TuanTranCodeLeap.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 03:04:18.257 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API) in 56.3672ms
+2026-05-09 03:04:18.257 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.258 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 139.5803ms
+2026-05-09 03:04:18.274 +08:00 [INF] User registration successful for email: login.fail@example.com, User ID: 2
+2026-05-09 03:04:18.274 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:04:18.277 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - null null
+2026-05-09 03:04:18.285 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 149.8036ms
+2026-05-09 03:04:18.285 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.285 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 154.7865ms
+2026-05-09 03:04:18.288 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 65
+2026-05-09 03:04:18.288 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-09 03:04:18.288 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.289 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.290 +08:00 [INF] Login attempt for email: login.fail@example.com
+2026-05-09 03:04:18.295 +08:00 [WRN] Authentication failed. Error: null, Description: null
+2026-05-09 03:04:18.300 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-09 03:04:18.301 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - 401 null application/json; charset=utf-8 23.2807ms
+2026-05-09 03:04:18.307 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:04:18.307 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.308 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.311 +08:00 [INF] Starting registration for email: product.user.d05d1ea9-37fb-41bc-ae90-b258f78195e9@example.com
+2026-05-09 03:04:18.454 +08:00 [WRN] Login failed: Invalid password - Email: login.fail@example.com
+2026-05-09 03:04:18.454 +08:00 [ERR] Error during login for email: login.fail@example.com
+System.UnauthorizedAccessException: Invalid email or password
+   at TuanTranCodeLeap.Application.Auth.Commands.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in d:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Auth\Commands\LoginCommand.cs:line 71
+2026-05-09 03:04:18.487 +08:00 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 03:04:18.487 +08:00 [INF] User registration successful for email: product.user.d05d1ea9-37fb-41bc-ae90-b258f78195e9@example.com, User ID: 2
+2026-05-09 03:04:18.488 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:04:18.489 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 180.7216ms
+2026-05-09 03:04:18.490 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.491 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 183.7437ms
+2026-05-09 03:04:18.529 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 99
+2026-05-09 03:04:18.530 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.531 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.531 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 241.7604ms
+2026-05-09 03:04:18.531 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.532 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 401 null application/json; charset=utf-8 243.9935ms
+2026-05-09 03:04:18.533 +08:00 [INF] Login attempt for email: product.user.d05d1ea9-37fb-41bc-ae90-b258f78195e9@example.com
+2026-05-09 03:04:18.565 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 110
+2026-05-09 03:04:18.566 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.566 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.589 +08:00 [INF] Starting registration for email: test.integration@example.com
+2026-05-09 03:04:18.704 +08:00 [INF] Login successful for email: product.user.d05d1ea9-37fb-41bc-ae90-b258f78195e9@example.com, User ID: 2
+2026-05-09 03:04:18.704 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:04:18.705 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 173.7018ms
+2026-05-09 03:04:18.705 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.705 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 176.2025ms
+2026-05-09 03:04:18.710 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products/0 - null null
+2026-05-09 03:04:18.714 +08:00 [INF] Token validated successfully for user: unknown
+2026-05-09 03:04:18.717 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.723 +08:00 [INF] Route matched with {action = "GetProductById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.API.Common.ApiResponse`1[TuanTranCodeLeap.Application.DTOs.ProductDto]]] GetProductById(Int32) on controller TuanTranCodeLeap.API.Controllers.ProductsController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.726 +08:00 [INF] Executing BadRequestObjectResult, writing value of type 'TuanTranCodeLeap.API.Common.ApiResponse`1[[TuanTranCodeLeap.Application.DTOs.ProductDto, TuanTranCodeLeap.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 03:04:18.729 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API) in 5.4044ms
+2026-05-09 03:04:18.729 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.730 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products/0 - 400 null application/json; charset=utf-8 20.0424ms
+2026-05-09 03:04:18.735 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:04:18.735 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.735 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:04:18.753 +08:00 [INF] Starting registration for email: product.user.90a3da5a-7983-4075-abfd-bc0cf81a0193@example.com
+2026-05-09 03:04:18.766 +08:00 [INF] User registration successful for email: test.integration@example.com, User ID: 3
+2026-05-09 03:04:18.766 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:04:18.767 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 200.0524ms
+2026-05-09 03:04:18.767 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:04:18.767 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 201.6921ms
+2026-05-09 03:12:43.519 +08:00 [INF] Starting TuanTranCodeLeap API
+2026-05-09 03:12:43.608 +08:00 [INF] User profile is available. Using 'C:\Users\wong9\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-09 03:12:43.766 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:12:43.807 +08:00 [WRN] Failed to determine the https port for redirect.
+2026-05-09 03:12:43.870 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:12:43.909 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:12:44.075 +08:00 [INF] Starting registration for email: product.user.cea9257a-6c39-4d35-a369-74a2f8b37a26@example.com
+2026-05-09 03:12:44.793 +08:00 [INF] User registration successful for email: product.user.cea9257a-6c39-4d35-a369-74a2f8b37a26@example.com, User ID: 1
+2026-05-09 03:12:44.800 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:12:44.834 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 919.6002ms
+2026-05-09 03:12:44.859 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:12:44.866 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 1101.691ms
+2026-05-09 03:12:44.872 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 99
+2026-05-09 03:12:44.877 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:12:44.885 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:12:44.909 +08:00 [INF] Login attempt for email: product.user.cea9257a-6c39-4d35-a369-74a2f8b37a26@example.com
+2026-05-09 03:12:45.240 +08:00 [INF] Login successful for email: product.user.cea9257a-6c39-4d35-a369-74a2f8b37a26@example.com, User ID: 1
+2026-05-09 03:12:45.242 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:12:45.254 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 368.231ms
+2026-05-09 03:12:45.254 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.256 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 383.934ms
+2026-05-09 03:12:45.263 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - null null
+2026-05-09 03:12:45.343 +08:00 [INF] Token validated successfully for user: unknown
+2026-05-09 03:12:45.350 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.358 +08:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.API.Common.ApiResponse`1[TuanTranCodeLeap.Application.DTOs.PagedProductsResponse]]] GetProducts(Int32, Int32) on controller TuanTranCodeLeap.API.Controllers.ProductsController (TuanTranCodeLeap.API).
+2026-05-09 03:12:45.372 +08:00 [INF] Retrieving products - Page: 1, PageSize: 10
+2026-05-09 03:12:45.399 +08:00 [INF] Products retrieved successfully - Count: 10, Total: 500
+2026-05-09 03:12:45.400 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.API.Common.ApiResponse`1[[TuanTranCodeLeap.Application.DTOs.PagedProductsResponse, TuanTranCodeLeap.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 03:12:45.434 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API) in 75.277ms
+2026-05-09 03:12:45.434 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.435 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 171.729ms
+2026-05-09 03:12:45.478 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - null null
+2026-05-09 03:12:45.483 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-09 03:12:45.490 +08:00 [WRN] Authentication failed. Error: null, Description: null
+2026-05-09 03:12:45.495 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-09 03:12:45.496 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products?pageNumber=1&pageSize=10 - 401 null application/json; charset=utf-8 17.4413ms
+2026-05-09 03:12:45.502 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:12:45.505 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.505 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:12:45.510 +08:00 [INF] Starting registration for email: product.user.d8b8296b-3425-47ec-a2fd-13fffbe768b9@example.com
+2026-05-09 03:12:45.679 +08:00 [INF] User registration successful for email: product.user.d8b8296b-3425-47ec-a2fd-13fffbe768b9@example.com, User ID: 2
+2026-05-09 03:12:45.680 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:12:45.681 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 175.1398ms
+2026-05-09 03:12:45.681 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.681 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 179.1801ms
+2026-05-09 03:12:45.683 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 99
+2026-05-09 03:12:45.683 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.684 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:12:45.689 +08:00 [INF] Login attempt for email: product.user.d8b8296b-3425-47ec-a2fd-13fffbe768b9@example.com
+2026-05-09 03:12:45.856 +08:00 [INF] Login successful for email: product.user.d8b8296b-3425-47ec-a2fd-13fffbe768b9@example.com, User ID: 2
+2026-05-09 03:12:45.856 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:12:45.857 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 172.9217ms
+2026-05-09 03:12:45.857 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.857 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 174.3303ms
+2026-05-09 03:12:45.860 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products/0 - null null
+2026-05-09 03:12:45.863 +08:00 [INF] Token validated successfully for user: unknown
+2026-05-09 03:12:45.868 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.875 +08:00 [INF] Route matched with {action = "GetProductById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.API.Common.ApiResponse`1[TuanTranCodeLeap.Application.DTOs.ProductDto]]] GetProductById(Int32) on controller TuanTranCodeLeap.API.Controllers.ProductsController (TuanTranCodeLeap.API).
+2026-05-09 03:12:45.878 +08:00 [INF] Executing BadRequestObjectResult, writing value of type 'TuanTranCodeLeap.API.Common.ApiResponse`1[[TuanTranCodeLeap.Application.DTOs.ProductDto, TuanTranCodeLeap.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 03:12:45.881 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API) in 5.2408ms
+2026-05-09 03:12:45.881 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.881 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products/0 - 400 null application/json; charset=utf-8 21.2488ms
+2026-05-09 03:12:45.890 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/register - application/json; charset=utf-8 139
+2026-05-09 03:12:45.890 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:12:45.891 +08:00 [INF] Route matched with {action = "Register", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.UserInfoDto]] Register(TuanTranCodeLeap.Application.DTOs.RegisterDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:12:45.914 +08:00 [INF] Starting registration for email: product.user.bd2ccce7-9039-419c-9789-c511085199b7@example.com
+2026-05-09 03:12:46.118 +08:00 [INF] User registration successful for email: product.user.bd2ccce7-9039-419c-9789-c511085199b7@example.com, User ID: 3
+2026-05-09 03:12:46.119 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.UserInfoDto'.
+2026-05-09 03:12:46.120 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API) in 229.4004ms
+2026-05-09 03:12:46.121 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Register (TuanTranCodeLeap.API)'
+2026-05-09 03:12:46.121 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/register - 200 null application/json; charset=utf-8 231.1255ms
+2026-05-09 03:12:46.123 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/token/login - application/json; charset=utf-8 99
+2026-05-09 03:12:46.123 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:12:46.124 +08:00 [INF] Route matched with {action = "Login", controller = "Token"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.Application.DTOs.AuthResponseDto]] Login(TuanTranCodeLeap.Application.DTOs.LoginDto) on controller TuanTranCodeLeap.API.Controllers.TokenController (TuanTranCodeLeap.API).
+2026-05-09 03:12:46.136 +08:00 [INF] Login attempt for email: product.user.bd2ccce7-9039-419c-9789-c511085199b7@example.com
+2026-05-09 03:12:46.277 +08:00 [INF] Login successful for email: product.user.bd2ccce7-9039-419c-9789-c511085199b7@example.com, User ID: 3
+2026-05-09 03:12:46.277 +08:00 [INF] Executing OkObjectResult, writing value of type 'TuanTranCodeLeap.Application.DTOs.AuthResponseDto'.
+2026-05-09 03:12:46.278 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API) in 153.7815ms
+2026-05-09 03:12:46.278 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.TokenController.Login (TuanTranCodeLeap.API)'
+2026-05-09 03:12:46.278 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/token/login - 200 null application/json; charset=utf-8 155.2616ms
+2026-05-09 03:12:46.280 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/products/999999 - null null
+2026-05-09 03:12:46.282 +08:00 [INF] Token validated successfully for user: unknown
+2026-05-09 03:12:46.283 +08:00 [INF] Executing endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:12:46.283 +08:00 [INF] Route matched with {action = "GetProductById", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[TuanTranCodeLeap.API.Common.ApiResponse`1[TuanTranCodeLeap.Application.DTOs.ProductDto]]] GetProductById(Int32) on controller TuanTranCodeLeap.API.Controllers.ProductsController (TuanTranCodeLeap.API).
+2026-05-09 03:12:46.310 +08:00 [INF] Retrieving product with ID: 999999
+2026-05-09 03:12:46.326 +08:00 [WRN] Product retrieval failed: Product not found - ID: 999999
+2026-05-09 03:12:46.326 +08:00 [ERR] Error retrieving product with ID: 999999
+TuanTranCodeLeap.Application.Common.Exceptions.NotFoundException: Entity "Product" (999999) was not found.
+   at TuanTranCodeLeap.Application.Handlers.Products.GetProductByIdQueryHandler.Handle(GetProductByIdQuery request, CancellationToken cancellationToken) in d:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Application\Handlers\Products\GetProductByIdQueryHandler.cs:line 33
+2026-05-09 03:12:46.333 +08:00 [INF] Executing NotFoundObjectResult, writing value of type 'TuanTranCodeLeap.API.Common.ApiResponse`1[[TuanTranCodeLeap.Application.DTOs.ProductDto, TuanTranCodeLeap.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-09 03:12:46.334 +08:00 [INF] Executed action TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API) in 50.5393ms
+2026-05-09 03:12:46.334 +08:00 [INF] Executed endpoint 'TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById (TuanTranCodeLeap.API)'
+2026-05-09 03:12:46.334 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/products/999999 - 404 null application/json; charset=utf-8 54.5507ms

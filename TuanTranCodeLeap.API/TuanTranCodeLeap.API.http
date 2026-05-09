@@ -1,0 +1,6 @@
+@TuanTranCodeLeap.API_HostAddress = http://localhost:5197
+
+GET {{TuanTranCodeLeap.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

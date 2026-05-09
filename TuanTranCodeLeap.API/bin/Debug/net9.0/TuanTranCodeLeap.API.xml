@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TuanTranCodeLeap.API</name>
+    </assembly>
+    <members>
+        <member name="T:TuanTranCodeLeap.API.Common.AuthorizeCheckOperationFilter">
+            <summary>
+            Operation filter to apply security requirements only to endpoints with [Authorize] attribute
+            </summary>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.ProductsController.GetProducts(System.Int32,System.Int32)">
+            <summary>
+            Get paginated list of all products
+            </summary>
+            <param name="pageNumber">Page number (default: 1)</param>
+            <param name="pageSize">Number of items per page (default: 10)</param>
+            <returns>Paginated product list</returns>
+            <response code="200">Products retrieved successfully</response>
+            <response code="400">Invalid pagination parameters</response>
+            <response code="401">Unauthorized - authentication required</response>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.ProductsController.GetProductById(System.Int32)">
+            <summary>
+            Get a specific product by ID
+            </summary>
+            <param name="id">Product ID</param>
+            <returns>Product details</returns>
+            <response code="200">Product found</response>
+            <response code="400">Invalid ID</response>
+            <response code="401">Unauthorized - authentication required</response>
+            <response code="404">Product not found</response>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.ProductsController.SearchProducts(System.String,System.String,System.String,System.Nullable{System.Decimal},System.Nullable{System.Decimal},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)">
+            <summary>
+            Search products with filters
+            </summary>
+            <param name="name">Filter by product name (optional)</param>
+            <param name="description">Filter by description (optional)</param>
+            <param name="sku">Filter by SKU (optional)</param>
+            <param name="minPrice">Minimum price filter (optional)</param>
+            <param name="maxPrice">Maximum price filter (optional)</param>
+            <param name="minStockQuantity">Minimum stock quantity filter (optional)</param>
+            <param name="maxStockQuantity">Maximum stock quantity filter (optional)</param>
+            <param name="pageNumber">Page number (default: 1)</param>
+            <param name="pageSize">Number of items per page (default: 10)</param>
+            <returns>Filtered and paginated product list</returns>
+            <response code="200">Search completed successfully</response>
+            <response code="400">Invalid filter parameters</response>
+            <response code="401">Unauthorized - authentication required</response>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.ProductsController.CreateProduct(TuanTranCodeLeap.Application.DTOs.ProductCreateDto)">
+            <summary>
+            Create a new product
+            </summary>
+            <param name="request">Product creation details</param>
+            <returns>Created product</returns>
+            <response code="201">Product created successfully</response>
+            <response code="400">Invalid input or duplicate SKU</response>
+            <response code="401">Unauthorized - authentication required</response>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.ProductsController.UpdateProduct(System.Int32,TuanTranCodeLeap.Application.DTOs.ProductUpdateDto)">
+            <summary>
+            Update an existing product
+            </summary>
+            <param name="id">Product ID</param>
+            <param name="request">Product update details</param>
+            <returns>Updated product</returns>
+            <response code="200">Product updated successfully</response>
+            <response code="400">Invalid input or duplicate SKU</response>
+            <response code="401">Unauthorized - authentication required</response>
+            <response code="404">Product not found</response>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete a product
+            </summary>
+            <param name="id">Product ID</param>
+            <returns>True if deleted</returns>
+            <response code="200">Product deleted successfully</response>
+            <response code="400">Invalid ID</response>
+            <response code="401">Unauthorized - authentication required</response>
+            <response code="404">Product not found</response>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.TokenController.Register(TuanTranCodeLeap.Application.DTOs.RegisterDto)">
+            <summary>
+            Register a new user account
+            </summary>
+            <param name="request">Registration details including email, password, first name and last name</param>
+            <returns>User information including roles</returns>
+            <response code="200">Registration successful</response>
+            <response code="400">Invalid input or email already exists</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:TuanTranCodeLeap.API.Controllers.TokenController.Login(TuanTranCodeLeap.Application.DTOs.LoginDto)">
+            <summary>
+            Authenticate user and get JWT token
+            </summary>
+            <param name="request">Login credentials including email and password</param>
+            <returns>Authentication response with JWT token and user details</returns>
+            <response code="200">Login successful</response>
+            <response code="401">Invalid credentials</response>
+            <response code="500">Internal server error</response>
+        </member>
+    </members>
+</doc>

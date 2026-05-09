@@ -1,0 +1,12 @@
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\bin\Debug\net9.0\TuanTranCodeLeap.Domain.deps.json
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\bin\Debug\net9.0\TuanTranCodeLeap.Domain.dll
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\bin\Debug\net9.0\TuanTranCodeLeap.Domain.pdb
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\TuanTranCodeLeap.Domain.csproj.AssemblyReference.cache
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\TuanTranCodeLeap.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\TuanTranCodeLeap.Domain.AssemblyInfoInputs.cache
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\TuanTranCodeLeap.Domain.AssemblyInfo.cs
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\TuanTranCodeLeap.Domain.csproj.CoreCompileInputs.cache
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\TuanTranCodeLeap.Domain.dll
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\refint\TuanTranCodeLeap.Domain.dll
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\TuanTranCodeLeap.Domain.pdb
+D:\Tuan\Tuan-Tran-codeleap\TuanTranCodeLeap.Domain\obj\Debug\net9.0\ref\TuanTranCodeLeap.Domain.dll
